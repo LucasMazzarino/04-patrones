@@ -10,4 +10,9 @@ public class CatAdapter implements IAnimal {
         System.out.println("Adaptando la solicitud para Cat...");
         cat.meow();
     }
+
+    public void move() {
+        System.out.println("Adaptando la solicitud de movimiento para Cat...");
+        cat.jump();
+    }
 }

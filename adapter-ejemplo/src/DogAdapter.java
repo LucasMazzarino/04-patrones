@@ -8,6 +8,11 @@ public class DogAdapter implements IAnimal {
     @Override
     public void makeSound() {
         System.out.println("Adaptando la solicitud para Dog...");
-        dog.bark();
+        dog.woof();
+    }
+
+    public void move() {
+        System.out.println("Adaptando la solicitud de movimiento para Dog...");
+        dog.run();
     }
 }
