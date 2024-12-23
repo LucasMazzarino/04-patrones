@@ -1,18 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        DogAdapter dogAdapter = new DogAdapter(dog);
-        dogAdapter.makeSound();
-        dogAdapter.move();
+        Guerra guerra = new Guerra();
 
-        Cat cat = new Cat();
-        CatAdapter catAdapter = new CatAdapter(cat);
-        catAdapter.makeSound();
-        catAdapter.move();
+        Soldado soldado = new Soldado();
+        Tanque tanque = new Tanque();
+        Caballo caballo = new Caballo();
+        CaballoAdapter caballoAdapter = new CaballoAdapter(caballo);
 
-        Bird bird = new Bird();
-        BirdAdapter birdAdapter = new BirdAdapter(bird);
-        birdAdapter.makeSound();
-        birdAdapter.move();
+        guerra.agregarEjercito(soldado);
+        guerra.agregarEjercito(tanque);
+        guerra.agregarEjercito(caballoAdapter);
+
+        guerra.atacarTodos();
     }
 }
