@@ -1,6 +1,6 @@
 
-# Patron Singleton
-Singleton es un patrón de diseño creacional que nos permite asegurarnos de que una clase tenga una única instancia, a la vez que proporciona un punto de acceso global a dicha instancia.
+# Patron Adapter
+El Patrón Adapter es un patrón de diseño estructural que permite que objetos con interfaces incompatibles trabajen juntos.
 
 
 
@@ -12,17 +12,15 @@ Singleton es un patrón de diseño creacional que nos permite asegurarnos de que
 
 ## Funcionamiento
 
-Imagina que has creado un objeto y al cabo de un tiempo decides crear otro nuevo. En lugar de recibir un objeto nuevo, obtendrás el que ya habías creado.
+Interfaz Objetivo: Define los métodos esperados por el cliente.
 
-Ten en cuenta que este comportamiento es imposible de implementar con un constructor normal, ya que una llamada al constructor siempre debe devolver un nuevo objeto por diseño.
+Clase Adaptada: Tiene métodos específicos que necesitan ser adaptados.
 
-Al igual que una variable global, el patrón Singleton nos permite acceder a un objeto desde cualquier parte del programa. No obstante, también evita que otro código sobreescriba esa instancia.
+Adaptador: Implementa la interfaz objetivo y delega las llamadas al objeto adaptado, traduciendo las solicitudes según sea necesario.
 
-## Cuando usarlo...
+Ejemplo 1:
+![image](https://github.com/user-attachments/assets/2c2de8dc-959a-420d-b96b-edf56e539dfd)
 
-- Utiliza el patrón Singleton cuando una clase de tu programa tan solo deba tener una instancia disponible para todos los clientes; por ejemplo, un único objeto de base de datos compartido por distintas partes del programa.
-
--  Utiliza el patrón Singleton cuando necesites un control más estricto de las variables globales.
-
-
+Ejemplo 2:
+![image](https://github.com/user-attachments/assets/21430bba-7174-4833-a14f-b48d3eabb3bd)
 
